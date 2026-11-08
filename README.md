@@ -95,3 +95,8 @@ adb uninstall dev.halo.launcher
 
 Halo is an independent project, not affiliated with Amazon or Apple. It borrows general TV-UI
 patterns (big hero, sideways rows, focus lift) but no assets, icons or fonts from either.
+
+## License
+
+Halo's code is released under the [MIT License](LICENSE). The bundled Inter font is under the
+SIL Open Font License (see `FONT-LICENSE-Inter.txt`).
