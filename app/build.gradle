@@ -1,0 +1,41 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace = 'dev.halo.launcher'
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = 'dev.halo.launcher'
+        minSdk = 22          // Fire OS 5+
+        targetSdk = 34
+        versionCode = 1
+        versionName = '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = true
+            shrinkResources = true
+            proguardFiles(getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro')
+            signingConfig = signingConfigs.debug   // personal sideload build
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
+
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
+}
+// Intentionally no dependencies: zero third-party code.

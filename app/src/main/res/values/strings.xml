@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Halo</string>
+    <string name="a11y_label">Halo Home button</string>
+    <string name="a11y_desc">Returns you to Halo whenever the Amazon home screen opens. Reads nothing on screen; it only watches for the Amazon home screen.</string>
+</resources>
